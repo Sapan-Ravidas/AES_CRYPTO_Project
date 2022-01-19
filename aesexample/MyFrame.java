@@ -150,6 +150,12 @@ public class MyFrame extends JFrame implements ActionListener {
 
             if (response == JFileChooser.APPROVE_OPTION) {
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                String filePath = file.toString();
+                // JLabel newBackhground = new JLabel(new ImageIcon(filePath));
+                
+                // this.setContentPane(newBackhground);
+                // this.revalidate();
+                // this.repaint();
                 System.out.println(file);
             }
         }
